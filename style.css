@@ -1,4 +1,66 @@
-h1
+* {
+    box-sizing: border-box;
+  }
+
+body
 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+    margin: 0;
+    background-color: white;
+}
+
+h1
+{ 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    font-weight: bold;
+    font-size:350% ; 
+    text-align: center;
+    padding: 5%;
+}
+
+a:link
+{
+    color:rgb(115, 173, 28);
+    text-decoration: none;
+}
+
+a:visited
+{
+    color:rgb(28, 84, 173);
+    text-decoration: none;
+}
+
+a:active
+{
+    color:orange;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color:rgb(0, 104, 0);
+    text-decoration: none;
+}
+
+.column
+{
+    float:left;
+    width: 100%;
+    padding: 15px;
+
+    /* font*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 150%;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width:600px)
+{
+    .column{
+        width: 100%;
+    }
 }
