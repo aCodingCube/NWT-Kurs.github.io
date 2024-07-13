@@ -7,32 +7,49 @@
     <title>NWT-Website</title>
 </head>
 <body>
-
-    <div class="Header">
-        <h1>NWT-Website</h1>
+    <script src="./script.js"></script>
+    <div class="header">
+        <h1 class="heading">NWT-Website</h1>
+        <svg class="arrows">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
+        <p class="subheading" id="sub-heading">Alle Programme für 2024 -> </p>
     </div>
 
     <div class="row">
-        <div class="column">
-            <h2>NWT Bierbrau-Programm</h2>
-            <a href="https://github.com/aCodingCube/NWT-Bier" target="_blank">-> Code Website besuchen</a>    
-        </div>
+        <button class="column" onclick="OpenInNewTab('https://github.com/aCodingCube/NWT-Bier')">
+            <span class="column-header">NWT Bierbrau-Programm</span>
+            <p>-> Code Website besuchen</p>    
+        </button>
         
-        <div class="column">
-            <h2>Platzhalter</h2>
-                <a href="" target="_blank">-> Code Website besuchen</a>    
-            </div>
-        
-        <div class="column">
-            <h2>Platzhalter</h2>
-                <a href="" target="_blank">-> Code Website besuchen</a>    
-            </div>
-    </div>
+        <button class="column" onclick="OpenInNewTab('https://www.google.com')"">
+            <span class="column-header">Platzhalter</span>
+            <p>-> Code Website besuchen</p>    
+        </button>
 
-    <!--<a href="https://github.com/aCodingCube/NWT-Bier" target="_blank">NWT-Bierbrau Program</a>-->
-    
+        <button class="column" onclick="OpenInNewTab('https://www.google.com')"">
+            <span class="column-header">Platzhalter</span>
+            <p>-> Code Website besuchen</p>    
+        </button>
+
+        <button class="column" onclick="OpenInNewTab('https://www.google.com')"">
+            <span class="column-header">Platzhalter</span>
+            <p>-> Code Website besuchen</p>    
+        </button>
+
+        <button class="column" onclick="OpenInNewTab('https://www.google.com')"">
+            <span class="column-header">Platzhalter</span>
+            <p>-> Code Website besuchen</p>    
+        </button>
+
+        <button class="column" onclick="OpenInNewTab('https://www.google.com')"">
+            <span class="column-header">Platzhalter</span>
+            <p>-> Code Website besuchen</p>    
+        </button>
+    </div>
     
 </body>
-
 
 </html>
