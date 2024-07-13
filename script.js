@@ -11,3 +11,8 @@ window.addEventListener('DOMContentLoaded',function() {
     console.log(numberOfEntries);
     this.document.getElementById("sub-heading").innerHTML += numberOfEntries;
 },false);
+
+function OpenInNewTab(url)
+{
+    window.open(url,'_blank').focus();
+}
