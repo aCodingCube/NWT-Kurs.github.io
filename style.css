@@ -12,6 +12,7 @@ body
     animation-delay: calc(var(--scroll) * -1s);
     animation-iteration-count: 1;
     animation-fill-mode: both;
+    background-size: 100% 100%;
 }
 
 @keyframes body
