@@ -8,8 +8,10 @@ window.addEventListener('scroll', () => {
 // for the rendering the count of entries
 window.addEventListener('DOMContentLoaded',function() {
     var numberOfEntries = document.querySelectorAll('.column').length;
-    console.log(numberOfEntries);
     this.document.getElementById("sub-heading").innerHTML += numberOfEntries;
+
+    // Console
+    console.log("Made by Lorenz :)");
 },false);
 
 function OpenInNewTab(url)
