@@ -1,3 +1,4 @@
+/* general */
 * {
     box-sizing: border-box;
   }
@@ -30,30 +31,17 @@ h1
     margin: 0%;
 }
 
-a:link
-{
-    color:rgb(115, 173, 28);
-    text-decoration: none;
-}
+/*
+rgb link 115, 173, 28
+rgb visited 28, 84, 173
+rgb active orange
+rgb hover 0, 104, 0
+*/
 
-a:visited
+.column-header
 {
-    color:rgb(28, 84, 173);
-    text-decoration: none;
+    color: white;
 }
-
-a:active
-{
-    color:orange;
-    text-decoration: none;
-}
-
-a:hover
-{
-    color:rgb(0, 104, 0);
-    text-decoration: none;
-}
-
 .column
 {
     float:left;
@@ -85,6 +73,7 @@ a:hover
     clear: both;
 }
 
+/* for scaling of row elements */
 @media screen and (max-width:600px)
 {
     .column{
@@ -102,26 +91,6 @@ a:hover
     margin-left: auto;
     position: sticky;
     text-align: center;
-    
-
-    /* animation */
-    animation: heading 1s linear;
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
-}
-
-@keyframes heading
-{
-    to{
-        
-    }
-}
-
-.column-header
-{
-    color: white;
 }
 
 .subheading
