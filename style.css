@@ -133,7 +133,7 @@ rgb hover 0, 104, 0
     margin-top: auto;
     margin-bottom: 50%;
     margin-left: auto;
-    position: sticky;
+    position: relative;
     text-align: center;
 }
 
