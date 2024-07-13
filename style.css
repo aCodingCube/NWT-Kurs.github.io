@@ -106,10 +106,12 @@ rgb hover 0, 104, 0
 {
     padding: 5%;
     margin: 5%;
-    background-color: white;
+    /* background-color: white; */
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .row::after{
