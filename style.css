@@ -135,6 +135,7 @@ rgb hover 0, 104, 0
     margin-left: auto;
     position: relative;
     text-align: center;
+    line-height: 1;
 }
 
 .subheading
