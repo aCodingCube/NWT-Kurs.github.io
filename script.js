@@ -35,3 +35,11 @@ function OpenInNewTab(url)
 {
     window.open(url,'_blank').focus();
 }
+
+function Message()
+{
+    Swal.fire({
+        title: "NWT ist cool!",
+        icon: "success"
+      });
+}
