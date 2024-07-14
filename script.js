@@ -25,7 +25,11 @@ window.addEventListener('scroll', () => {
 // for the rendering the count of entries
 window.addEventListener('DOMContentLoaded',function() {
     var numberOfEntries = document.querySelectorAll('.column').length;
-    this.document.getElementById("sub-heading").innerHTML += numberOfEntries;
+    if(numberOfEntries == 1)
+    {
+    this.document.getElementById("sub-heading").innerHTML += "1 Projekt";
+    }
+    this.document.getElementById("sub-heading").innerHTML += numberOfEntries + " Projekte";
 
     // Console
     console.log("Made by Lorenz :)");
