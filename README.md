@@ -1,2 +1,2 @@
 # NWT Basiskurs-Website
-NWT Basiskurs Website with links to NWT-Code repos.
+NWT Basiskurs Website mit Links zu NWT-Code repos.
