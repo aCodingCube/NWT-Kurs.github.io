@@ -30,13 +30,13 @@ h1
     margin: 0%;
 }
 
-.column-header
+.project-header
 {
     font-weight: bold;
     font-size: 150%;
 }
 
-.column
+.projectElement
 {
     float:left;
     width: 100%;
@@ -57,7 +57,7 @@ h1
     color:rgb(255, 255, 255);
 }
 
-.column:hover
+.projectElement:hover
 {
     background-color: white;
     color: black;
@@ -67,25 +67,25 @@ h1
     box-shadow: 0px 0px 40px 20px rgb(01, 197, 162);
 }
 
-.column:active
+.projectElement:active
 {
     background-color: rgb(115, 173, 28);
 }
 
-.column span
+.projectElement span
 {
     cursor: pointer;
     position: relative;
     transition: 0.5s;
 }
 
-.column:hover span::after
+.projectElement:hover span::after
 {
     opacity: 1;
     right: 0;
 }
 
-.row
+.projectSection
 {
     padding: 5%;
     margin: 5%;
@@ -97,7 +97,7 @@ h1
     -webkit-backdrop-filter: blur(8px);
 }
 
-.row::after{
+.projectSection::after{
     content: "";
     display: table;
     clear: both;

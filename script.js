@@ -2,10 +2,9 @@
 // for scroll animations
 window.addEventListener('scroll', () => {
     document.body.style.setProperty('--scroll',window.scrollY / (document.body.offsetHeight - window.innerHeight));
-    
-     
 }, false);
 
+// event listener for scrolling property
 window.addEventListener('scroll', () => {
     var height = document.getElementById("upper-background").getBoundingClientRect.height;
     var value = window.scrollY / height;
@@ -24,12 +23,21 @@ window.addEventListener('scroll', () => {
 // event listener for website finishing loading
 // for the rendering the count of entries
 window.addEventListener('DOMContentLoaded',function() {
-    var numberOfEntries = document.querySelectorAll('.column').length;
+
+    var numberOfEntries = document.querySelectorAll('.projectElement').length;
+
     if(numberOfEntries == 1)
     {
     this.document.getElementById("sub-heading").innerHTML += "1 Projekt";
     }
-    this.document.getElementById("sub-heading").innerHTML += numberOfEntries + " Projekte";
+    else if(numberOfEntries > 1)
+    {
+        this.document.getElementById("sub-heading").innerHTML += numberOfEntries + " Projekte";
+    }
+    else
+    {
+        console.error("Failed to render number of projects!");
+    }
 
     // Console
     console.log("Made by Lorenz :)");
